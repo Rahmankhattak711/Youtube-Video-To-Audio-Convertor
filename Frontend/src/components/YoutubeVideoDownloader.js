@@ -49,7 +49,7 @@ const YoutubeDownloader = () => {
         <br />
         <div className="flex justify-center mt-4">
           <div className="bg-gray-600 text-lg p-2 w-[400px] rounded-sm">
-            {result ? result : "No Download Yet"}
+            {result ? result : "No Download Audio Avaliable"}
           </div>
         </div>
       </div>
