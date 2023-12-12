@@ -1,10 +1,13 @@
-// src/app.module.ts
 import { Module } from '@nestjs/common';
-import { YoutubeController } from './youtube/youtube.controller';
-import { YoutubeService } from './youtube/youtube.service';
+import {YoutubeModule} from "./youtube/youtube.module";
+import {FLModule} from "./fl/fl.module";
 
 @Module({
-  controllers: [YoutubeController],
-  providers: [YoutubeService],
+  imports:[
+      YoutubeModule,
+      FLModule
+  ],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
